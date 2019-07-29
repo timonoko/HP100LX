@@ -1,0 +1,145 @@
+JAMMED 1.0 - Shareware strategy game for HP100/200LX
+----------------------------------------------------
+
+WHAT IS JAMMED?
+
+A virus has infected your body. But, don't worry: you have strong
+antibodies. However, you have to show these antibodies where the
+virus is. This is not really a problem for you since you have the overview
+and see where the antibody is (star shaped character) and where the virus
+is (hexagonal shape). However, the way from the antibody to the virus is
+jammed with blood clots, so you cannot just walk the antibody to the virus.
+You have to shift around the blood clots in order to free the way. Doing that
+needs energy. When all energy is used up, the game is over (for that
+antibody - not for your body since you have millions of antibodies :-)
+
+If you think this is not realistic at all: you are right! If you want
+to be right, just try to move the star shaped piece towards the hexagonal
+piece and shift the rectangular blocks around to free the way :-)
+
+
+HOW TO INSTALL?
+
+Copy JAMMED.EXE to your HP100/200LX. That's all. To run JAMMED, just type
+JAMMED and press ENTER at the DOS prompt. You also can select JAMMED.EXE
+in FILER and press ENTER.
+
+
+HOW TO PLAY?
+
+When starting JAMMED, it shows you the welcome screen. From there, you
+can access the menu by pressing the Menu key. Some of the menu items you
+can also access by the function keys. The following menus are available:
+
+Game Menu:
+
+   New Game (F2) - starts a new game (didn't you expect that? ;-)
+   Restart Level (F3) - lets you play the last played level again
+   Restart Game - lets you play the last played game again
+   Start Game by Number - lets you specify which game you want to play
+      (Each game has a number. There are 65535 different games. The game
+      number is displayed while playing and also stored in the high scores
+      list.)
+   Abort game (F4) - lets you abort the current game if you see there is no
+      chance to complete it (e.g. not enough energy left)
+   Show High Scores (F5) - displays the highest scores achieved do far
+   Exit (F10) - exits JAMMED
+
+Quit Menu:
+
+   Exits JAMMED
+
+Help menu:
+
+   How to Play (F1) - displays a short summary of the game
+   How to Register - displays registration information
+
+Once you have started a game, you will see a rectangular grid and status
+information to the right of the grid. Within the grid you will notice a 
+star shaped piece (this is the antibody) and a hexagonal piece (the virus).
+The rest of the grid is partly empty and partly filled with rectangular
+blocks. These blocks are the blood clots.
+
+The antibody starts somewhere near the upper left corner of the grid while
+the virus is located somewhere near the lower right corner. You can move
+the antibody by pressing the arrow keys (cursor keys). If you try to move
+the antibody to a filled field, the blood clot in that field and all blood
+clots connected to it are shifted. This only works when no blood clot has
+to be pushed against a wall.
+
+Sometimes, it is not possible to get to the virus since the way is barred
+and it is not possible to push the blood clots to free the way. In these
+cases you can push the Del or the Space key to tell the antibody it should
+eat the blood clots in the eight fields surrounding it.
+
+Once you have moved the antibody to the virus, the virus is eliminated
+and a new level starts. (Did you think the infection will be stopped by
+eliminating just ONE virus? ;-)
+
+
+THE SCORES
+
+If you had unlimited energy, the game would continue forever (or until you
+eliminated all viruses, but there are MANY!). But, as it is in real life,
+you have only limited energy. When you start the game, you have 80 energy
+points. Each move of the antibody needs one energy point. When you shift
+around blood clots while moving, this needs additional two energy points.
+Finally, if the antibody has to swallow the surrounding blood clots, this
+is a lot of work and costs 20 energy points.
+
+Whenever you complete a level (i.e. eliminate the virus), you get an award
+of 50 energy points. On the way to the virus to be eliminated there are
+sometimes 'minor' viruses that are not really dangerous. However, for each
+of them the antibody devours, 10 energy points are rewarded.
+
+The game ends if all energy is used up.
+
+All energy points that you did not use when completing a level are added
+to the score. Thus, the less energy you use, the higher will get your
+score.
+
+
+WHY REGISTER?
+
+1) Because it is unfair to play without registering.
+2) Because you want to support the shareware concept.
+3) Because you want to get past level 5.
+4) Because the high scores are saved across sessions.
+
+
+HOW TO REGISTER?
+
+The most easy way to register JAMMED is to use GO SWREG on CompuServe.
+Just do a GO SWREG, select ID 4135 and answer the questions. A few
+days later, you will receive your registration information by email.
+An amount of $20 will be charged to your CompuServe bill.
+
+If you do not have access to CompuServe, put $20 into an envelope
+and send it together with your email address (preferably) or your
+snail mail address (only if not possible otherwise) to:
+
+   Andreas Garzotto
+   Buttenaustr.18
+   8134 Adliswil
+   Switzerland
+
+A few days later you will get your registration instructions by email
+(or a quite a few weeks later by snail mail).
+
+The registration will be valid for future versions of JAMMED too.
+
+
+ACKNOWLEDGEMENTS
+
+I want to thank Harry Konstas who provided HPCLIB. HPCLIB is a C library
+of functions that allow to build a user interface similar to the HP built-in
+applications.
+
+I want to thank Fred Kaufman and Harry Konstas for beta testing JAMMED.
+
+And finally, I want to thank the virus that infected me and made it possible
+to program JAMMED since I could stay at home a few days, trying to get rid of
+the flu.
+
+
+Andreas Garzotto, December 1994

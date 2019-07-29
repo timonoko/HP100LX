@@ -1,0 +1,266 @@
+   Dominoes for the HP 100LX/200LX Palmtop PC's
+              Version 2.2
+
+Table of Contents -------------------------
+
+  1. How to play Dominoes
+
+  2. Strategy
+
+  3. How to Play Dominoes on the Palmtop
+
+  4. Tips for Running Dominoes on the Palmtop
+
+  5. Revision History
+
+
+Dominoes is freeware. Please enjoy the program and share 
+it with others. If you give it to someone else (or post 
+it on a bulletin board service), be sure to include the 
+three files:
+
+DOMINOES.EXE    The program itself.
+DOMINOES.DOC    The documentation (this file).
+DOMINOES.ICN    The icon.
+
+You don't need to give DOMINOES.RES, since this is a 
+file containing the statistics of all the games you've 
+played. If you ever want to reset your statistics, you
+can use the Filer app to simply delete this file.
+
+The latest versions of the program will be on the web
+page:
+http://members.aol.com/FREEWHL44/
+
+Please let me know what you think of this game, or if 
+you have suggestions to make it better.
+
+   Curtis Cameron
+   freewhL44@aol.com
+   1520 Glastonbury Dr
+   Plano, TX  75075
+
+How to play Dominoes ---------------------------
+
+In the game of Dominoes, each player takes turn placing 
+domino tiles end-to-end. One end of the domino played 
+must match the outside end of the last domino, so that 
+the two matching ends are together. Doubles, however, 
+are played sideways. The first double played is called 
+the "spinner", and after both sides have been played to, 
+its ends can be played as well.
+
+Scoring:
+After each play, the outside ends of the last dominoes 
+are added, and if the total is a multiple of five, then 
+the person who played last scores that many points. If 
+a double is the last tile in an arm, then it is played 
+sideways and both of its ends count towards the total. 
+If dominoes have been played off the spinner, then the 
+last domino in each of those arms is scored too.
+
+If a player can't play with a domino in his hand, he 
+must draw a tile from the "Bone Yard", where the 
+leftover dominoes are kept, until he draws one that he 
+can play. A player is not allowed to draw unless he must 
+to be able to play.
+
+When a player plays his last domino, he gets to score 
+the total of the spots in his opponent's hand, rounded 
+to the nearest five. If both players still have dominoes 
+and the Bone Yard has been emptied, and neither can 
+play, then the game is blocked. Both players then count 
+the total spots in their hands, and the person with the 
+fewest gets to score the points in his opponent's hand, 
+rounded to the nearest five. All scores are multiples of 
+five because the score is traditionally kept with one 
+mark on the paper being five points.
+
+A game is 250 points. Multiple hands will be played 
+until one player scores at least 250, then the game is 
+over immediately.
+
+Strategy ----------------------
+
+The strategy of dominoes can be broken down into three 
+categories:
+1. Scoring
+2. Preventing your opponent from scoring
+3. Blocking
+These are listed in order of increasing difficulty, and 
+therefore are charactersitics of domino players of 
+increasing ability.
+
+Scoring:
+You can more quickly and easily figure if you will be 
+able to score on a play by looking at the points on the 
+board before you play, and figuring the difference 
+between what's there and what it will need to score. 
+For example, if there are currently 17 points, then you 
+can make it a multiple of five and therefore score by 
+taking away two, or by adding three. Then look for 
+dominoes in your hand that can do this. There are 
+certain "magic" dominoes which you should try to hold on 
+to because they make scoring easier. If your opponent 
+has just scored, then you won't be able to score without 
+one of these, and if you score, it then makes it more 
+difficult for your opponent to score. These dominoes are 
+the 0-0, 0-5, 5-5, and 6-1. If you opponent scores with 
+a blank, five, or a non-double six or one on an end, 
+then you would also be able to score with one of these.
+Other magic dominoes can score when there is a double 
+on an end. These are the 1-2, 2-4, and 3-6, which can 
+duplicate the points in a 1-1, 2-2, and 3-3. Other magic 
+dominoes are the 3-1, 4-3, and 6-2, which will score 
+five or ten fewer points after a 3-3, 4-4, and 6-6, 
+respectively.
+
+Preventing your opponent from scoring:
+After you get good at finding scoring tiles in your 
+hand, you will be able to start looking for potential 
+scoring plays that your opponent could make, and play 
+ones from your hand that give him the least opportunity.
+
+Blocking
+The simplest form of blocking is achieved by noticing 
+when your opponent is forced to draw from the Bone Yard, 
+and making a mental note of which numbers he could have 
+played to. Then, try to make those numbers his only 
+options again. You can also consider that if you have 
+several of one number, or if several have already been 
+played, your opponent is more likely to be out of them.
+
+Another strategy related to blocking, is to use you low 
+dominoes to try to force the low dominoes out of your 
+opponents hand, then when you go out, he will have more 
+points left in his hand. Try to remember to use your 
+larger dominoes for scoring, and your smaller ones for 
+blocking.
+
+How to Play Dominoes on the Palmtop ------------------
+
+The controls for playing the game have intentionally 
+been kept simple. Your hand appears at the bottom of 
+the screen, with each tile aligned with one of the 
+Palmtop's function keys. If you ever have more than ten 
+tiles, some will be drawn one row up, and are played by 
+hitting shift-function key.  Note: if you have defined
+the shift-function keys to start certain applications on
+the palmtop, you can instead hit the "S" key before the
+function key to play one from the second row.
+
+On the left side of the screen is the title box, showing 
+how many tiles your opponent has in his hand, and how 
+many are in the boneyard. Next are the computer's score, 
+followed by your score, and finally the count of the end 
+tiles currently on the table.
+
+The rest of the screen is used as the table for playing. 
+There is not enough room on this table to allow them all 
+to be played without hitting an edge, so when one of the 
+arms reaches an edge, it will bend around. Remember to 
+look at the last one played in each arm, not simply 
+which is farthest from the center. If one arm gets 
+crowded in a corner, it will automatically re-arrange 
+the tiles to fit better. If you would like them 
+re-arranged at any time, hit the "R" key.
+
+When it's your turn, simply hit the function key 
+corresponding to the domino you want to play. If there 
+is only one place for this domino to be played, or if 
+there is no difference between multiple places, the 
+domino will jump to that spot. If there is more than one 
+way to play it, a small box will appear asking which 
+direction (from the spinner) you want; hit one of the 
+arrow keys to make your choice. This is the direction of 
+that arm from the spinner, not necessarily the direction 
+that arm may currently be headed if they have been bent 
+around an edge.
+
+To switch between expert and beginner levels, you can use
+any of the "L", "B" or "E" keys.
+
+To see what domino the computer would suggest that you
+play, hit the "?" (shift-3) key, or just the "3" key. 
+The domino will flash, then the place to play it will 
+flash.
+
+If you have some dominoes on the second row, and some
+empty spaces on the first row, you can hit the "P" key
+to pack all the dominoes into the first spaces.
+
+If you want to rearrange the dominoes in your hand, 
+such as to sort the numbers in order, use the "M" key
+(for "Move").
+
+Anytime you want to quit the game, hit the "Q" key.
+
+Tips for Running Dominoes on the Palmtop -------------
+
+Dominoes is a DOS program which is written only for the 
+HP 100LX and 200LX Palmtops. DOS applications can be run 
+at the same time as the other System Manager Compliant 
+applications, but you may have only one DOS program 
+running at a time. You may switch to another app by 
+hitting its blue key just as you always do. To get back, 
+you can either start DOS from App Manager, or hit 
+Ctrl-123. You can't just go to App Manager and ask it to 
+start Dominoes again.
+
+Dominoes can be run by opening the filer application, 
+moving the cursor to the DOMINOES.EXE file, and hitting 
+Enter. The easier way is to install it into your App 
+Manager:
+
+1. Start App Manager by hitting the blue "More" key.
+2. Hit F2 to add an icon.
+3. Enter the name you would like to appear for the 
+   program in the Name field, then Tab to the next field.
+4. In the Path field, type in the full path name of the 
+   exe file, including the .exe extension, then add the 
+   "|" (shift-backslash) character, and 70, like this:
+     Path: c:\games\dominoes.exe|70
+   The 70 tells app manager to give the program 70K of 
+   memory to run in.  If your palmtop tells you that 
+   there is not enough memory, increase this number.
+5. In the comments line you can put a "¨" character 
+   (upside-down question mark, Fn-3) to have it skip 
+   the "press any key..." message when Dominoes exits.
+6. Tab to the Icon area and select an icon. Then hit 
+   F10.
+
+This program will not work on a regular DOS PC.  It
+will actually be running, but there will be no graphics
+to show you what is going on.  Hit the "Q" key to quit.
+The graphics used are specific to the palmtop.
+
+
+Revision History -----------------------------
+This is version 2.2.
+
+Version 2.2 fixed some bugs in 2.0, and adds a show if
+you win the game.
+
+The new features for version 2.0 are:
+* The game is automatically saved when you exit, so that
+  next time you start, you'll be in the same place.
+* The score bar graph moves 5 points at a time.  This is
+  so that you will be more likely to notice when a score
+  is made.
+* The score bar shows points scored this hand in a grayed
+  pattern, and the score made in previous hands is solid
+  black.  Now you can get a trend for who is catching up.
+* You can now hit the "?" key, or the unshifted "3" key
+  to see the computer's suggestion, and the suggested
+  place to play it shows up better.
+
+The features new to version 1.8 were:
+* Use the "M" key to move the dominoes in your hand, so
+  you can sort them how you like.
+* Use the "P" key to pack your hand.  This will move all
+  of them into the first empty spaces.  Use this if you
+  have had to draw onto the second row of dominoes, and
+  you want to move them all onto the first row.
+* Use the "?" (shift-3) key to have the computer 
+  suggest what you should play.  The suggested domino
+  will flash, then the place to play it will flash.
