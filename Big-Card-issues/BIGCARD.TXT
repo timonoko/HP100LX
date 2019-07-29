@@ -1,0 +1,29 @@
+Dear Large Storage Card and HP 100LX Customer,
+
+Large PC Cards and other cards sometimes do not work "out of the  box" with the LX series because of size and other incompatibities.
+
+The enclosed driver from defunct ACE Technologies allows many cards to work. 
+ 
+ACECARD3.COM
+CONFIG.TMP
+BIGCARD.TXT
+
+ACECARD3.COM is the required software driver. For your convenience, we have included CONFIG.TMP, which may be merged with your current CONFIG.SYS file.  BIGCARD.TXT contains a copy of this letter.
+
+Installation:
+
+1)  CONFIG.TMP contains the following line:
+
+DEVICE=C:\ACECARD3.COM /SDP
+
+Use MEMO to add this line to the active CONFIG.SYS file located on the C drive.
+
+Important Notes: 
+
+a)  If you have a 32, 64, or 96 Meg C drive, then add this line to the end of your CONFIG.SYS file on your F drive (not C drive).  
+
+b) Since your palmtop will not recognize your large memory card until the driver has been installed, you cannot store the CONFIG.SYS and AUTOEXEC.BAT files on your large memory card in the A  drive.
+
+2) Copy ACECARD3.COM to your C drive.  
+(32, 64, and 96 Meg C drive users: if you follow the directions above and place the new line at the end of the file, copy ACECARD3.COM to the C drive. If you place the new line before DEVICE=C:\RDSWAP.EXE, then copy ACECARD3.COM to the F drive.)
+
