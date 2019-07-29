@@ -1,0 +1,381 @@
+
+
+
+         -- Softdoc for Microsoft's Flight Simulator program --
+                  Thrown together by Bill Landreth
+              during the month of May in the year 1985
+
+
+           Dedicated to the poor souls who do not like to
+           use their manuals because they are not on a CRT.
+
+
+
+    Firstly, it should be noted that the newer versions of MS Filght
+Simulator can be started in two ways.  These are either booting up the
+main disk or inserting the main disk while in DOS and starting the file
+"FS.COM" (note that the file FS.COM appears on the protected disk, and
+should be under the default drive).  The reason that Microsoft allows us
+lowly people to start something in such a difficult mannor is because
+this mode of startup allows you to install a mouse-driver if you wish --
+to use the mouse for input.  Rumor has it that this will allow other types
+of drivers to be installed before starting Flight Simulator, but in my
+brief attempt to try this I failed. (for the curious, I tried to load
+a driver for my Tecmar Graphics Master, but the driver was blowed up.)
+
+    Next, you should be aware of the fact that by hitting <escape> you
+will be presented with a screenfull (one of two) of options to change if
+you do not find the present situation to your liking.  You may then hit
+<return> to go down to the next option, hit "-" to go up to the previous,
+or enter a number to change the current option.  After entering a new
+argument to a parameter it may be entered with either the <return> or
+the "-" keys.  The option page will automatically switch to the second
+page (or first, if on page two already) if you move either off the top or
+bottom of the screen. Here are the parameters explained:
+                            *************
+
+User Mode           :Selects a "mode;" a place to store sets of parameters.
+                       MODES 0-9 ARE PRE-DEFINED, MODES 10-19 ARE ASSUMED TO
+                       BE USER-MODIFIED VERSIONS OF 0-9 WITH 10 ADDED (i.e.,
+                       mode 0 becomes mode 10 when user-modified, mode 5
+                       becomes 15, etc). MODES 20-29 ARE USER DEFINED.
+
+Sound               :1=Sound on, 0=Sound off. With no sound, watch out for
+                       stalls!!  If sound on, you will beeps when stalling.
+
+Auto-Coordination   :1=linked rudders and ailerons (the easy choice!)
+                       0=You must controll rudders and ailerons separately
+
+Slew                :1=Slew system ON         (covered
+                       0=Slew system OFF         later)
+
+Reality Mode        :0=You don't have to worry about the little things,
+                       like burned out lights or iced-over engines.
+                       1=Reality in effect, watch out!
+
+Demo Mode           :1=Demo takes over
+
+Europe 1917         :Setting this to one is the same as setting "User Mode"
+                       to 7.  You CANNOT change the World War One battle game
+                       mode - it will always remain user mode 7.
+
+Communication Rate  :From 1 to 255, how fast the "radio" sends text across
+                       the screen. 1 is slow, 255 is fast -- the best values
+                       to pick are powers of two for smooth scrolling.
+
+North Position      :2-byte value showing your north position in 256 meter
+                       units...has your current position on entry.
+
+East Position       :Ditto for the East
+
+Altitude            :Sets/displays current altitude
+
+Pitch               :Sets/displays current pitch (0-359)
+
+Bank                :Sets/displays current bank (0-359)
+
+Heading             :Sets/displays current heading (0-359)
+
+Airspeed            :Sets/displays current airspeed in knots
+
+Throttle            :Sets/displays current throttle setting
+
+Rudder              :Sets/displays current rudder setting
+
+Ailerons            :Sets/displays current aileron setting
+
+Flaps               :(yawn)Sets/displays current flap setting
+
+Elevators           :Sets/displays current elevator setting
+
+Hours               :Allows viewing or changing of local hour, 0-23
+                         (hows that for a change?)
+Minutes             :Sets/displays current minutes (0-59)
+                         (now we're back in the rut again!)
+
+Season              :1=Winter, 2=Spring, 3=Summer, 4=Fall
+
+Cloud Layers        :Allows setting of 2 cloud layers, tops and bottoms.
+
+Wind                :Allows setting of 3 wind layers, wind layer one
+                       starts at ground level and stops at "Shear Zone
+                       altitude 1" and wind layer two picks up from there.
+
+Reliability Factor  :0 to 100% reliable while "Reality mode" is set. Has
+                       no effect if reality mode off, but if on then a low
+                       value assures problems while a high value makes
+                       problems more unlikely.
+
+Joystick            :0=no joystick, 1=one joystick, 2=two joysticks
+                            ***************
+
+  }} IMPORTANT NOTE:  You MUST hit the <insert> key after changing any
+     parameters or any changes will be lost when you exit.  You exit,
+     by the way, by hitting the <escape> key as you did to enter.      {{
+
+
+  Here is a short description of the 10 pre-set user modes (accessed by
+changing the first parameter):
+
+Mode 0  --  Easy mode flying out of Chicago     }} DEFAULT MODE  {{
+Mode 1  --  Medium-level out of Los Angeles
+Mode 2  --  Demo mode set, in Chicago
+Mode 3  --  Just getting dark at Los Angeles
+Mode 4  --  Nightime in Chicago
+Mode 5  --  A taste of bad weather in N.Y.
+Mode 6  --  More than a taste of bad weather out of Boston
+Mode 7  --  The WWI Ace game, cannot change this one.
+Mode 8  --  Starting airborne in San Diego
+Mode 9  --  Starting airborne with problems in Champaign
+
+   }} If you modify any of these modes, 10 will be added to the number {{
+      }} Remember to hit the <insert> key before exiting the editor {{
+
+
+
+    Now that the editor is all out of the way, you may be interested in
+finding out what some of those dials and jing-a-ma-deals are that take up
+half of your screen.  Here is a description of them:
+
+Dial, Far left with "KNOTS" writen on it:
+   --+ This dial relates the airspeed of the craft to the viewer in knots
+
+Jing-a-ma-deal, Far left with "L" and "R."  Directly under the "Knots" dial:
+   --+ This thing is a "turn co-ordinator." It's degree of tilt shows how
+      fast you are turning, and if it just touches the "L" or "R" this means
+      that a 2-minute turn is in progress; that is in two minutes a 360 will
+      have taken place.  Little circle under it -- yes the one in the box --
+      shows the relationship between the plane's longitudinal axis and
+      direction of flight. It is WAY off if you fly sideways, for instance.
+
+Just to the right of the "KNOTS" dial, half dark half light:
+   --+ This is an artificial horizon.  If you've ever seen an airplane
+      movie, you know what it is. Otherwise, your oudda luck.
+
+Below the richly described artificial horizon, 3 numbers over a plane:
+   --+ This be a compass, displaying 0 to 359.  The little "D" near the
+      compass is to tell you that you may hit "D" to coordinate your
+      plane's compass with a magnetic one. A magnetic one does not "drift,"
+      but takes a long time to settle so you have a gyro. (lucky, eh?)
+
+Two the right of the now infamous artificial horizon:
+   --+ A dead givaway of an altimiter. Large hand is hundreds, small hand
+      is thousands, and there is yet a smaller hand for tens of thousands
+      when you get that high. You may hit "A" to adjust this dial to the
+      real world, as with the directional gyro (compass).
+
+To the right of the compass, the next dial over. Word "UP" appears:
+   --+ This shows rate of climb/dive in foot-per-second, up is climb.
+
+Between compass and rate of climb dial, 2 horizontal lines and a vertical:
+   --+ Shows the current Aileron (top), elevator (middle), and rudder
+      (bottom) settings. When in coordinated mode, top and bottom are
+      always the same.
+
+The two far right circles, near altimiter and rate of climb:
+   --+ Your two Omni-Bearing indicators with glidescope(?). Forget about
+      this one, your life is complicated enough. (or is it my life that's
+      complicated enough??)
+
+The three vertical bars to the right of the two circles above:
+   --+ The top one shows your flaps, the middle shows elevator trim, the
+      bottom indicates throttle setting. The "C.H." that may or may not
+      be under the throttle setting indicated "Carburetor Heat."
+
+3-digits labeled "compass":
+   --+ Your magnetic compass. Jinx, you owe me a Coke. The new kind, too.
+
+2 dials marked "fuel":
+   --+ Left- and right-wing fuel tank indicators.
+
+2 dials under fuel gauges, marked "OIL T" and "OIL P":
+   --+ Shows oil temperature and oil pressure
+
+3 lights under compass marked O,M, and I:
+   --+ O,M, and I stand for Outer, Middle and Inner. Will light up when
+      you are over one of the marker beacons for instrument approach.
+
+Under O-M-I lights, 5 digits marked "COM":
+   --+ Shows the frequency that your communications radio is tuned to.
+
+To the right of the COM indicator, group of 3 words:
+   --+ Top: Landing gear, up or down (shown as "DN").  Middle: Lights,
+      on or off.  Bottom: Engine ignition coils, on or off.
+
+The NAV 1, NAV 2, and DME indicators:
+   --+ Nav 1 and 2 will show the current frequency of those things I told
+      you to forget all about. DME tells how far away from the NAV 1
+      source you are in miles. (sorry I mentioned it)
+
+To the right of NAV 2, 4 digits marked XPNDR:
+   --+ Lets you know what squawk you send to Air Traffic Control as an
+   identification. Known as a "Transponder" in the big city.
+
+Bottom two indicators to the far left, marked TIME and RPM:
+   --+ One of the two is a clock, the other is a tachometer.  I seem to
+      have forgotten which is which.
+
+
+
+    Once you know all those by heart I suppose you will want to know how
+to FLY the dang thing. Well, here are the keyboard commands:
+
+                         The Keypad:
+
+
+0       :     Controls the rudder to the left, in coordinated mode also
+          controls ailerons.
+1       :     Nose up trimmer.  Slight adjustment to the elevators.
+2       :     Nose up. Elevators up one notch.
+3       :     I forget what this one does. oops. If anything at all...
+4       :     Bank left - Ailerons left, when coordinates mode is on this
+          also controls the rudders.
+5       :     Centers ailerons and rudders.
+6       :     Bank right - Ailerons right, when coordinated mode is in
+          effect this also controls rudders.
+7       :     Nose down trimmer.  Slight down adjustment to elevators.
+8       :     Nose down.  Elevators down a notch.
+9       :     The opposite of key three, I think. maybe. or maybe not.
+NumLock :     Activates the radar view.  HIT "+" OR "-" ON MAIN KEYBOARD
+          TO ZOOM IN AND OUT. DO NOT USE KEYPAD "+" AND "-" TO ZOOM.
+                      ('cause it won't work!)
+Scroll- :     If in "Radar" mode, activates "visual" mode. If in "visual"
+Lock      mode, follow Scroll-Lock with one of the 9 keypad keys to look
+          in that direction...i.e. hit scroll-lock and "2" on the keypad
+          and you will be looking out the back of the plane.
+
+                              The Function Keys
+
+F1,F3,F5,F7,F9   :  This set of keys controls the 5 possible settings for
+                  your planes flaps; F1=0 degrees and F9=50 degrees.
+
+F2,F4,F6,F8,F10  :  These keys are your throttle control. F2 is throttle
+                  full, F10 is cut throttle. F4 increases throttle two
+                  notches while F8 decreases throttle 2 notches. F6 raises
+                  the throttle one notch. There are 32 "notches."
+
+
+                             The Number Strip
+                      (accross top of  main keyboard)
+                        -=PRESS "M" BEFORE 0 TO 9=-
+
+          numbers marked with "??" may do something, but I forgot.
+
+1  -  Magnetos off       2  -  Left Magneto on     3  -  Right Magneto on
+4  -  Both Magnetos on   5  -  Start engine        6  -  ??
+7  -  ??                 8  -  ??                  9  -  ??
+0  -  Full lean fuel     -  -  Radar zoom out      +  Radar zoom in
+                                    or                     or
+                                tune radio             tune radio
+
+
+                           The Main Keyboard
+
+A = Altimeter adjustment.
+C = Tunes communications radio. Hit "+" or "-" after hitting "C" to tune
+   radio, hit "C" again TWICE to tune the decimal points.
+D = Directional gyro adjustment.
+G = Toggle landing gear up/down.
+H = Carburetor heat on/off. Used to keep engine from icing.
+L = Lights on/off. Toggle outside and instrument lights.
+N = Tunes Nav-1 or Nav-2.  Hit "1" or "2" after "N" to select, and then
+   "+" or "-" to tune. To tune in smaller incriments hit "N" twice before
+   selecting "1" or "2."
+T = Sets transponder. Hit "T" to change first number with "+" and "-",
+   "TT" for second, "TTT" for third, and "TTTT" for forth.
+V = Tunes OBI. Hit "V" followed by "1" or "2" for OBI number and then
+   "+" or "-" to tune to VOR station.
+. = Brakes. For use when on ground (surprise!).
+
+
+          Some Communications Frequencies
+
+          -= New York-Boston area =-
+
+Block Island State                     123.00
+Bridgeport                             120.90
+John F. Kennedy Int'l                  119.10
+Logan Int'l                            112.70
+Martha's Vineyard                      121.40
+
+
+  -= Central and Northern Illinois area =-
+
+Kankakee                               123.00
+Meigs                                  121.30
+Midway                                 128.05
+O'Hare Int'l                           135.15
+Willard                                124.85
+
+            -= Seattle area =-
+
+Fairchild Int'l                        122.80
+Olympia                                124.40
+Paine                                  128.65
+SEA-TAC Int'l                          118.00
+
+
+          -= Los Angeles area =-
+
+Catalina                               122.70
+Hughes                                 132.40
+John Wayne                             126.00
+Lindburgh                              134.80
+Van Nuys                               118.45
+
+
+
+
+                               Slew Mode
+                   }} Selectable from parameter menu {{
+
+     The slew-subsystem allows you to "fly" without really flying.  You
+can, for instance, slowly drift backward while upside-down if you really
+want to....or you can scream accross the void, getting from L.A. to N.Y.
+in 3 minutes. After selecting "Slew" from the options menu (hit escape)
+you are in slew mode (don't forget to hit the <insert> key first!!).
+     Once in slew mode, use function keys F1,F3,F5,F7, and F9 to control
+your plane's pitch and function keys F2,F4,F6,F8, and F10 to control your
+plane's altitude. The more you hit "F2," the faster you go up, and you
+go STRAIGHT up. Use the <alt> key to reset pitch, heading, and bank to
+zero degrees. You can use the "T" key at any time to transfer your current
+altitute, bank, pitch and heading to the current mode.
+     The keypad keys 7 and 9 control your bank slew, while 1 and 3 control
+your heading slew.  8,2,4, and 6 (up, down, left and right) control north,
+south, west, and east movements. The keypad key "5" will essentially stop
+all movement. Hitting any of these keys multiple times (except <alt>, "5,"
+and "T") will increase their effects.  One tap on the keypad "6" will send
+you drifting very slowly to the east, but several taps will move you faster
+and faster.
+
+                             World War I Ace
+                     }} Selectable as "user mode 7 {{
+                    }} or with Europe 1917 set to 1 {{
+
+     The world war I ace game included with Flight Simulator should not
+be attempted unless you are quite sure that you can handle the basics
+of flying. Once you are ready to try, you will notice a few differences
+between this mode and the modern mode.
+
+  1  :  More simple plane.  Fewer things to worry about such as radios
+       and landing gear and whatnot.
+  2  :  Now a simple radar screen appears on the lower-right hand corner
+       of the screen.
+  3  :  If you hit "R" you get a "War Report."
+  4  :  If you hit "W" war is declared.
+  5  :  If you hit "X" bombs drop.
+  6  :  Spacebar fires machine guns.
+
+  You can scout enemy land (it's over the river) without declaring war,
+to get an idea as to what to bomb and where the enemy planes come from.
+the radar on the main ("visual mode") screen will show a red (orange)
+blip if an enemy is below you, a white (white) blip if he is within +-
+100 feet of you in height, or a green (blue) blip if he is above you
+on RGB (composite) monitors. The radar will ONLY WORK WHEN FORWARD
+VISUAL VIEW IS SELECTED.
+
+
+    Please feel free to pass this on to other people who may be in need
+of it.  If you think of anything that needs to be added, do not hesitate
+to add away and of course corrections to my grammer and/or spelling are
+almost certainly a must!
