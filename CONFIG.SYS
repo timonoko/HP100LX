@@ -1,0 +1,7 @@
+buffers=20
+files=30
+lastdrive=J
+rem DEVICE=C:\STACKER\STACKER.COM /P=0 A: B: @C:
+DEVICE=c:\sys\ACECARD3.COM /SDP
+
+
