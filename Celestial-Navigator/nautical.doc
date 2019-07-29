@@ -1,0 +1,261 @@
+
+
+
+		     Nautical  v 1.5
+
+
+		An Astronavigation program complete with
+
+			built-in almanac for 1950 - 2050
+			reduction of sights
+			graphical displays of the stars
+			world map
+
+
+		It works, but a SatNav system is simpler and wiser !
+
+
+
+		Copyright  1990,93  Rory O'Conor
+
+
+		Distributed as a Shareware product
+
+.
+
+		 DISCLAIMER
+
+    I have taken every effort to ensure that the data used is accurate
+    and that my formulae are correct.
+
+    However there may be inaccurate data or totally wrong code. I am not
+    qualified in any way to judge. I know that there are inherent weaknesses
+    in my reductions of the planets and main star data.
+
+    I have used the program to compute my position on many occasions, and it
+    seems to work. This does not mean it will continue to work. Do try using
+    the program and then working the sight out with an almanac. You need to
+    be able to use the Almanac when this program does not work, or your
+    computer gets wet.
+
+    If you are prepared to accept this program as it is, with all its faults,
+    then do use it, but do not forsake other means for checking your position.
+
+    Remember that AstroNavigation has its limitations, as do programmers.
+
+
+.
+
+     There were five distribution files :
+	they have now been compressed to one file
+	NAUT15C.ZIP
+
+	Please distribute in this form although the
+	program will state otherwise.
+
+	If you dis/like the program and wish to send contributions $20,
+	comments or criticism then address them to :
+
+	Rory O'Conor			
+	3 Milton Road			Saltway Farm
+	Highgate			Northleach
+	London  N6 5QD			Gloucester  GL54 3QB
+	UK				UK
+	Tel & Fax: 081 340 8371		Tel: 0285-720110
+	Compuserve [100115,2656]
+
+.
+
+	HELP
+
+	You will have to use the on-line help - ie press F1 at a menu.
+	The help available is minimal.
+
+	If you have not got a Sextant and want to try the sight-reduction
+	routines. Then
+	(a)   Find out what is visible in a certain place at a certain
+	time using option ( Visible Bodies ) , and printing one page of
+	output.
+	(b) Using this data take a fix ( Taking a Fix ).
+	(c) View the result ( Visible Bodies ) and see the Position lines
+	on a Map ( Press M at the graphics menu ).
+	(d) Use the Re-work sight option to remove appalling fixes
+	 and re-view the result.
+
+	There are lots of hidden (but nice) features that will only
+	become apparent with use.
+
+
+
+.
+
+
+	Complete File List
+
+	ALMANAC.BIN	-	Navigational stars data
+	CONSTEL.BIN	-	Constellations
+	GASH.BIN	-	General data
+	METEOR.BIN	-	Meteor showers
+	NOTE.BIN	-	Notes
+	NOTEPAD.BIN	-	Pointers to notes
+	PLANET.BIN	-	Planetary elements
+	STAR.BIN	-	Star data
+	STARLINE.BIN	-	Constellation outlines
+	ATT.BGI 	-	ATT graphics driver
+	CGA.BGI 	-	CGA graphics driver
+	EGAVGA.BGI	-	EGA graphics driver
+	HERC.BGI	-	Hercules graphics driver
+	IBM8514.BGI	-	IBM graphics driver
+	PC3270.BGI	-	PC3270 graphics driver
+	LITT.CHR	-	Small character graphics font
+	NAUTICAL.DOC	-	This document
+	CITY.BIN	-	Towns and cities
+	COAST1.BIN	-	Coastal outline (100 mile resolution)
+	COAST2.BIN	-	Coastal outline (200 mile resolution)
+	COUNTRY.BIN	-	Countries
+	OCEAN.BIN	-	Oceanographic features
+	PORT.BIN	-	Ports of the world
+	NAUTICAL.EXE	-	Map version
+
+
+
+.
+
+  ACCURACY :
+       The data on the Sun is accurate to 0ø.01 and 0.1 mins
+       between 1950 and 2050.
+       The data on the Moon is accurate to 0ø.3 between 1950 and 2050.
+       The value for GHA Aries is accurate.
+       The Positions of the Navigational stars are accurate to 4
+       minutes of degree over the period 1991-1995 and probably
+       have similar accuracy up to 2000.
+       The Positions of the other stars are accurate to minutes of
+       degree probably over the period 1980 - 2000, except for
+       those with large Declinations eg Polaris.
+       The Planetary data is only designed to be accurate for 1990,
+       but may be reasonably accurate over 5 years ? Accuracy in
+       fractions of a degree.
+
+       DO NOT RELY ON THIS PROGRAM. YOU MUST BE ABLE TO USE A NAUTICAL
+       ALMANAC, AND CHECK IF THERE IS ANY DOUBT. THE POSITIONS FOR THE
+       SUN AND NAVIGATIONAL STARS ARE PROBABLY ACCURATE ENOUGH OVER THE
+       PERIOD 1991 - 1995. YOU CAN ALWAYS ENTER THE ALMANAC DATA INTO THE
+       PROGRAM.
+
+.
+
+
+    SOURCES :
+
+    Nautical Almanac 1989
+    Astronomical Almanac 1989
+    Astronomical Almanac 1990
+    Compact data for navigation and astronomy 1986-1990
+    Compact data for navigation and astronomy 1991-1995
+	Yallop & Hohenkerk
+    Supplement to Astronomical Almanac 1962 ?
+    Encyclopedia of Astronomy	Ronan
+    Star Names	RH Allen
+    Times atlas of the Oceans
+    Philips world atlas
+    World digitalized
+    Reader's Digest Great World Atlas
+
+
+
+
+
+.
+
+  INPUT :
+	Much improved on version 1.4
+
+	Dates are dd/mm/yy ie British system
+
+	All angles are in degrees.
+	Input will accept decimal degrees as well as
+	degrees and minutes.
+	+ and - are converted on input to N and S etc
+
+	There are default values for latitude and longitude
+	These change if you change them.
+
+	Default values for date and time are taken from the
+	system clock. The time is converted to approximate UT.
+	The program works in UT ( universal time ).
+
+	There are various units for length.
+
+
+
+.
+
+  OUTPUT :
+       Many results can be printed or added to a file. Files will
+       either be overwritten or added to as you request.
+
+   MONITORS :
+       Only tested on CGA,Hercules,EGA,VGA screens so far. The graphics
+       may not work on other monitors. If they do/do not I would
+       be interested in knowing.
+
+  FIXES :
+       Allows upto about 20 sights per fix.
+
+  PRINTER :
+       Will test for presence of printer.
+
+  BUGS :
+       There are still lots of bugs. The program may halt with a
+       cryptic debug message. If so please send me the details.
+       Polar sights may cause the program to terminate. The program
+       gets sick at the poles.
+
+.
+
+	UPDATE
+
+       This program supercedes NAUT_V1.EXE & NAUT102.EXE
+			       NAUT103?.EXE & NAUT104?.EXE
+	      please delete the old versions.
+
+   IMPROVEMENTS on version 1.4
+	Improved input routines
+	Coastal outline
+	List of places
+	Constellation outlines
+	Updated Almanac data
+	Updated Planetary data
+	Measurement unit conversion
+	Timezone check
+	Automatic installation
+
+
+
+   NB the planetary data will not be suitable for anything other than
+   identification purposes.
+.
+
+    FUTURE DEVELOPMENT
+	Tightening up of routines for increased speed
+	Possibly higher resolution coastline (speed and size probs)
+	Possibly use of overlays
+	Orbital elements for planets
+	Improved star reduction formulae
+	Confidence ellipse for position
+	Improved graphics menu
+	Improved online help
+	Logging of input and output
+	User configuration of program
+	Better documentation
+
+	All suggestion welcome
+
+
+  Rory O'Conor                       19/07/90, 14-Jan-93
+
+
+
+
+.
+

@@ -1,0 +1,53 @@
+                              Position at the Fix                              
+  The Date                              is : Sun 29/07/2001
+  The time of the Fix                   is : 10:09:21
+  The DR Lat                            is :    60ø 11.7' N
+  The DR Long                           is :    24ø 56.0' E
+  The Fix Lat                           is :    60ø 13.7' N  ñ  0.8'
+  The Fix Long                          is :    24ø 54.5' E  ñ  0.7'
+  The Standard error in position        is :   ñ  0.7'
+  The Course                            is :    0.0ø
+  The Speed                             is :   0.0 Knots
+----------------------------------------------------------------------
+      1 : Observation of Sun - Lower Limb at 06:18:25 UT on Sun 29/07/2001     
+  The Sextant altitude                  is :    29ø 47.0'  
+  The Observed altitude                 is :    29ø 54.4'  
+  The Calculated altitude               is :    29ø 54.5'  
+  The GHA of the Sun                    is :   272ø 59.3'    ñ  2.0'
+  The Declination of the Sun            is :    18ø 43.2' N  ñ  1.0'
+  The Horizontal Parallax               is :  +  0.1'
+  The Semidiameter                      is :  + 15.8'
+  The Intercept                         is :    -0.1 Nautical miles
+  The Azimuth                           is :  105.1ø
+----------------------------------------------------------------------
+      2 : Observation of Sun - Lower Limb at 09:36:30 UT on Sun 29/07/2001     
+  The Sextant altitude                  is :    47ø 21.0'  
+  The Observed altitude                 is :    47ø 29.1'  
+  The Calculated altitude               is :    47ø 29.6'  
+  The GHA of the Sun                    is :   322ø 30.6'    ñ  2.0'
+  The Declination of the Sun            is :    18ø 41.3' N  ñ  1.0'
+  The Horizontal Parallax               is :  +  0.1'
+  The Semidiameter                      is :  + 15.8'
+  The Intercept                         is :    -0.4 Nautical miles
+  The Azimuth                           is :  162.2ø
+----------------------------------------------------------------------
+      3 : Observation of Sun - Lower Limb at 08:56:45 UT on Sun 29/07/2001     
+  The Sextant altitude                  is :    45ø 19.7'  
+  The Observed altitude                 is :    45ø 27.8'  
+  The Calculated altitude               is :    45ø 27.3'  
+  The GHA of the Sun                    is :   312ø 34.3'    ñ  2.0'
+  The Declination of the Sun            is :    18ø 41.6' N  ñ  1.0'
+  The Horizontal Parallax               is :  +  0.1'
+  The Semidiameter                      is :  + 15.8'
+  The Intercept                         is :     0.5 Nautical miles
+  The Azimuth                           is :  148.9ø
+----------------------------------------------------------------------
+
+   Rory O'Conor.   1990                 13:12:08    Sun  29/07/2001
+
+                            Observation Corrections                            
+  The Index Error                       is :  +  0.0'
+  The Height of eye                     is :    15.0 m 
+  The Air temperature                   is :    30.0øC
+  The Atmospheric pressure              is :  1050 mb
+----------------------------------------------------------------------
