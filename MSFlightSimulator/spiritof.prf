@@ -1,0 +1,74 @@
+ ENHANCED AIRCRAFT DESIGNER - MAIN MENU                                         
+
+ Menus                                  Main Wings                              
+   A  STABILIZER SYSTEMS...               J  Span In Feet;00046                 
+   B  COLOR AND VISUAL DESIGN...          K  Chord In Feet;00007                
+   C  WGT/BAL/INSTRUM/STRUCT...           L  Aspect Ratio;006.57                
+   D  AERODYNAMICS/CONTROLS...            M  Angle Of Incidence;000.00          
+                                          N  Induced Drag Adj.;24900            
+                                          O  Dihedral (Degrees);00000           
+ Files                                    P  Dihedral Scale;00100               
+   F  Write Flight Parameter File         Q  Gyro Dihedral;00050                
+   G  Filename; SPIRITOF                  R  Winglets                           
+   H  Aircraft Name; Spirit Of St. Louis                                        
+   I  Save Aircraft To Disk             Airframe And Propulsion                 
+                                          S  Type:  PROP                        
+                                          T  Power: HP    00237                 
+                                          U  Altitude Derate;00060              
+
+
+ STABILIZER SYSTEMS                                                             
+
+ Horizontal Stabilizer                  Damping Effects                         
+   A  Position;00270                      G  Pitch Damper;00015                 
+   B  Surface Area;00052                  H  Roll Damper;00000                  
+   C  Angle Of Incidence;008.24           I  Yaw Damper;16000                   
+   D  Lift Coefficient Scale;16384        J  Pitch Vel. Hyst.;00080             
+                                                                                
+ Tail                                   Stability Augmentation                  
+   E  Position;00315                      K  Pitch Stabilizer Easy;32000        
+   F  Surface Area;00011                  L  Pitch Stabilizer Real;10000        
+
+
+ COLOR AND VISUAL DESIGN                                                        
+
+ VISUAL EFFECTS                                                                 
+   K  Aircraft Numbers ;  N-X-211                                               
+
+
+ WEIGHT/BALANCE/INSTRUMENTS/STRUCTURE                                           
+
+ Weight And Balance                      Instruments                            
+   A  Dry Weight LBS;02150                 H  Overspeed Warning;01000           
+   B  Fuel Capacity GAL;00450              I  Sim Switches;00000                
+   C  Center Of Gravity;00095              J  Stall Warning Angle;008.99        
+   D  Center Of Lift;00108                 K  Enhanced Instrument Panel         
+   E  Pitch Inverse Moment;20000                                                
+   F  Roll Inverse Moment;06000          Structure                              
+   G  Yaw Inverse Moment;10000             L  Gear: Fixed                       
+                                           M  Canard Configuration              
+
+
+ AERODYNAMICS/CONTROLS                 N  Crash Resistance;00008                
+
+ Surface Areas                            Control Sensitivities                 
+   A  Frontal Area (Sq. Ft.);00001          M  Rudder Sens.;08000               
+   B  Frontal Area Scale;00005              N  Rudder Half;00200                
+   C  Body Side Area;00320                  O  Rudder Eighth;01000              
+                                            P  Ailer. Sens.;01400               
+ Flaps Lift/Drag Coefficients               Q  Ailer. Half;00200                
+   D  Flaps Lift Coef.;00000                R  Ailer. Eighth;01000              
+   E  Flaps Drag Coef.;00000                S  Elev. Half;00200                 
+                                            T  Elev. Eighth;01000               
+ Drag Coefficients                          U  Ground Steering;00000            
+   F  Gear Drag Coef.;00045                                                     
+   G  Slow Speed Drag;00008               Miscellaneous.                        
+   H  Spoiler Drag;00000                    V  Stall Synthesize;00028           
+   I  Touchdown Drag;00050                  W  Heavy Aircraft                   
+   J  Slip Drag;00012                       Y  Thrust Reversers                 
+                                                                                
+ Dynamic Pressure Effects                                                       
+   K  Max Velocity;00240                                                        
+   L  Dynamic Pressure Limit;00075                                              
+
+

@@ -1,0 +1,249 @@
+
+*****************************************
+MICROSOFT FLIGHT SIMULATOR  Version 3.00
+     R E L E A S E      N O T E S
+*****************************************
+
+(This document contains information not found in the manual)
+
+
+U S E R     N O T E S
+==========================================
+Desk Accessories (Terminate & Stay-Resident):
+  Flight Simulator does not support the use of desk accessories such
+  as Sidekick and Fansi Console (both registered Trademarks).  Be sure
+  to shut down these applications before running Flight Simulator.
+==========================================
+PS/2 (Models 25 and 30) users:
+  Select display option J (256 color, 320x200)
+==========================================
+EGA Graphics Card users:
+  Minimum EGA card memory requirement:  256K
+==========================================
+Gas Plasma & LCD users:
+  Gas Plasma users should select display option B (Black/White CGA)
+  LCD users should select display option D (Liquid Crystal Display)
+==========================================
+Hercules display users:
+  On some systems containing both a Hercules-compatible graphic board and
+  a CGA-compatible board, the Hercules display option functions improperly.
+  If you have this problem on your system, and you wish to run in the
+  Hercules mode, you must remove the CGA board. If you are running in CGA
+  mode, you should have no problem.
+==========================================
+Joystick & Yoke users:
+  Some game cards have external switches for fine-tuning. If you have
+  such a card, experiment with the settings until sound quality is best.
+==========================================
+Installing on a hard disk from a 3.5-inch floppy disk:
+  Flight Simulator is stored in the \FLSIM subdirectory on the 3.5" disk.
+  1.  Follow steps 1 through 6 in "Installing Flight Simulator on your
+       Hard Disk" on page xiv of your Flight Simulator manual.
+  2.  Type  copy a:\flsim\*.*  and press ENTER to copy all Flight Simulator
+       files from the floppy disk to the hard disk.
+==========================================
+Copying to a 1.2-Meg 5.25-inch floppy disk:
+  Flight Simulator can be copied to a 1.2-meg floppy disk for backup, or
+  to avoid switching disks.
+  1. Insert a blank, formatted 1.2-meg floppy disk in drive A:.
+  2. Type  a:  and press ENTER to change to floppy drive A:.
+  3. Type  md flsim  and press ENTER to make a directory for Flight
+       Simulator.
+  4. Type  cd flsim  and press ENTER to change directories.
+  5. Insert one of the Flight Simulator disks in floppy drive B:.
+  6. Type  copy b:*.* a:  and press ENTER to copy all Flight Simulator
+       files from the floppy disk in drive B: to the floppy disk in
+       drive A:.
+  7. Repeat steps 5 and 6 for the second Flight Simulator disk.
+==========================================
+Laptop Keyboards:
+  Some keyboard functions may not be available on laptop keyboards, al-
+  thought you can access all functions through menus.  With the NUM LOCK
+  key, some alpha/numeric keys assume the layout of the 10-key numeric
+  keypad, and operate view selection and airplane controls.  In "standard"
+  keyboard mode, the keys correspond to the alphabetic assignments (e.g.
+  pause or strobe on and off).  Pressing NUM LOCK turns on the map view,
+  and activates the keypad mode.  If you press NUM LOCK twice rapidly, you
+  turn off the map while retaining the keypad mode.
+==========================================
+Selecting the Active Window:
+  You can have multiple windows, as described on page 27 in the manual.
+  To make a window active, choose the [-key for 3-D window one; the ]-key
+  for 3-D window two; and the NUM LOCK key for the map window; followed
+  by the apostrophe key (') to bring that window to the front.
+==========================================
+Entertainment Functions:
+  Always exit entertainment (Crop Duster, WWI-Ace, Formation Flying,
+  Multi-Player) and Flight Instruction by choosing Normal Flying,
+  Flight Instruction, or another Entertainment function from the MODE
+  menu.  DO NOT use Option B (Mode Select) from the MODE menu to resume
+  Normal Flying, as this will only change your location and aircraft
+  simulation and control settings.
+==========================================
+Choosing Aircraft:
+  You can run the entertainment functions (World War I, Crop Duster,
+  Formation Flying) using any plane.  The World War I game is designed
+  to be used with the SOPWITH; Crop Duster, Flight Lessons, & Formation
+  Flying are designed to be used with the CESSNA. Results with other
+  planes may be less than optimal, but are allowed so you can experience
+  the environments in different aircraft.
+==========================================
+Formation Flying:
+  If you crash, the lead plane will not crash with you!!  If you want to
+  rerun the game, reselect Formation Flying (MODE menu, Option 5, Enter-
+  tainment, Option 2, Formation Flying) and choose the desired course.
+==========================================
+Starting the Demo:
+  If you choose DEMO mode from the startup screen (with or without sound),
+  your mouse is disabled.  If you want to use the mouse and fly in Normal,
+  Entertainment, or Lesson modes [after the demo is run]; you should start
+  Flight Simulator in "Normal Flight Mode" (Option B from the startup menu)
+  and select the demo from within the program (MODE menu, Option 6).
+==========================================
+Lights:
+  You will only see the strobe effect when in clouds (especially at night).
+  The marker lights and strobe are not seen from external aircraft views.
+
+
+N E W     F E A T U R E S
+==========================================
+Flight Lesson Sequencing:
+  If you want to automatically run the lessons one after another, choose
+  option Y, Lesson Sequencing, in the Flight Instruction menu. If you
+  select Instructor Mode (Option X), lesson #1 runs the Instructor mode then
+  the Student mode, then lesson #2 begins in Instructor mode.  If you
+  select Student Mode, the instructor demonstrations will not be seen and
+  lesson #2 student mode follows lesson #1 student mode. Select the first
+  lesson you want to run to start the sequence.
+==========================================
+Smooth panning:
+  Press ENTER or SHIFT+ENTER to pan downward and SHIFT+BACKSPACE to pan
+  upward. Press the view control key (Scroll Lock on IBM PC with function
+  keys on left, keypad * for IBM PC with function keys on top, BREAK on
+  Tandy) to return to a level view.
+
+  Sideways smooth panning is available on the Tandy 1000 with the LEFT and
+  RIGHT arrow keys. Press the LEFT arrow key to pan left and the RIGHT
+  arrow key to pan right.  The Tandy 1000 Quick Reference card says to
+  use Backspace to pan upward.  The Backspace key restores a zoomed
+  window to 1x. Use Shift+Backspace as described above.
+==========================================
+Exiting Demos & Instructor Lessons:
+  Press ESC to stop demo playback or Flight Lessons (Instructor mode).
+  All other keypresses (except CTRL+BREAK) are ignored.
+==========================================
+Display Quality:
+  Display Quality is a new option (option E) on the Views menu.  Option 1
+  on the Display Quality menu allows you to choose the flicker rate and
+  speed. Flicker rate determines how often multiple windows are repainted.
+  Speed is how often the scenery is repainted.  The best flicker quality is
+  at the expense of scenery speed; and vice versa.  Image Complexity,
+  option 2, is a planned enhancement for the quality of scenery display,
+  and is not implemented in version 3.0.
+==========================================
+ADF Information:
+  The following Non Directional Beacons (NDB's) can be tuned with the
+  ADF radio.
+
+  Area                    Location        North   East    Frequency
+  -----------------------------------------------------------------
+  Chicago                 Deana           17239   16536      350
+                          Dwight          16874   16406      344
+                          Ermin           17128   16598      332
+                          Glenview        17295   16605      269
+                          Kedzi           17135   16648      248
+                          Veals           16369   16496      407
+
+  New York & Boston       Babylon         17064   21190      275
+                          Block Island    17352   21749      216
+                          Brainard        17542   21384      329
+                          Chup            17612   21328      388
+                          Conda           17023   21068      373
+                          Huder           17100   20992      233
+                          Meriden         17447   21327      238
+                          Waterbury       17445   21226      257
+
+  Los Angeles             El Monte        15397   5952       359
+                          Compton         15334   5859       378
+                          Escondido       14928   6181       374
+                          Swan Lake       15309   6108       257
+
+  Seattle & Tacoma        Carney          21385   6433       274
+                          Elwha           21775   6331       260
+                          Gray            21256   6455       216
+                          Kitsap          21407   6470       206
+                          Mason Co        21350   6337       348
+                          Nolla           21425   6591       362
+                          Renton          21351   6612       353
+
+  San Francisco           Casa Diablo     16854   6298       260
+                          Chandler        16661   5751       344
+                          Columbia        17267   5759       404
+                          Pigeon Point    17166   4988       286
+                          Proberta        18340   5500       338
+                          Reiga           17287   5292       374
+                          Sparks          17875   6213       254
+==========================================
+Loadable scenery files:
+  You can now convert your older SubLOGIC scenery disks into the version
+  3.0 format, and load them into your Flight Simulator subdirectory.
+   1. At the system prompt, type  converts  and press ENTER.
+   2. At the prompt, insert your SubLOGIC scenery disk into the disk
+      drive, then type that drive's letter.
+   3. A list of all possible scenery disks will appear on your screen.
+      At the prompt, type the letter corresponding to the scenery disk
+      you are converting.
+   4. At the prompt, type the letter of the drive where you want the
+      scenery stored.
+
+  The scenery filename will be SD-*.SCN, with the * replaced by the num-
+  bers 1 through 12, or JPN, SFS, or EUR. The files generated by "converts"
+  are placed in the default subdirectory on the drive you indicated. Only
+  these new scenery files are scanned for "automatic scenery loading".
+
+  Option A, Automatic Scenery Loading, appears on the Scenery Library
+  menu (choose NAV/COM then Option 2, Scenery Load) only if there are
+  two or more converted scenery files in the Flight Simulator subdirectory.
+  If Option A is selected, and a scenery file is available for the area
+  in which you are flying, that scenery file is automatically loaded and
+  used while you fly within its boundaries.
+
+  Crash detection (choose SIM, then Option 2) should be set to "Off"
+  when changing to other scenery disks.  Once you have started flying at
+  the new location, Crash detection can be turned "On".
+==========================================
+Demo Recording:
+  The (#) sec message at the bottom of the screen indicates the recording
+  interval currently set in the Demo Recorder menu (Option D).
+
+
+F E A T U R E      C H A N G E S
+================================
+Multi Player:
+  The "Switch Airplane Color" option sets the color of the other player's
+  airplane for your viewing, not the color of your airplane as stated in
+  the manual.
+==========================================
+"Squawk" code and Transponder:
+  Air Traffic Control (ATC) does not request a squawk code, as stated in
+  the manual on page 39; but the transponder can be tuned as described.
+==========================================
+NAV/COM  Frequency Changes and Additions:
+  (ILS/VOR)  110.50   Chicago-O'Hare Intl. (Runway 27R)
+             108.70   Martha's Vineyard (Chart indicates 108.2)
+
+  (ATIS)     124.70   Buchanan (Concord, CA)
+             128.50   Oakland South (CA)
+             118.85   San Francisco International (CA)
+==========================================
+Runway Correction:
+  Champaign, Ill      31, 13.
+==========================================
+Navigation Correction:
+  Flying from John Wayne to Riverside (CA), use 244 degrees, not 215
+  degrees as suggested by the map.
+==========================================
+OAKLAND Airport Coordinates:
+  The coordinates in the manual (17367N & 5129E) place you east of the
+  runway.  To line up on runway 9R, use coordindates 17366.0452N
+  5123.9249E Heading 090.
