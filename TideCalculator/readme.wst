@@ -1,0 +1,56 @@
+
+.XT:02
+6 W0 -0
+E H  T O
+.E:0
+                    NAUTICAL SHAREWARE
+
+     32 Barney Hill Road                     Phone: (508) 358-7938
+     Wayland, MA 01778-3602                  email: epwallnr@world.std.com
+
+                             
+     Dear TIDES user, 
+
+     Here is a copy of the latest release of the tide and current 
+     predicting program TIDES. 
+
+     Read TIDES.DOC for details on the program and its operation. 
+
+     This is a user supported shareware program for non-commercial use. If 
+     you use it beyond a trial period the registration fee of $15 should be 
+     paid. You are encouraged to copy and pass on the program without 
+     alteration and without charge for trial use. 
+   
+     In order to make predictions for a specific location harmonic 
+     constants for that place must have been entered in a ---.TID or ---
+     .CUR data file. Local U.S. reference stations for which the National 
+     Ocean Service (NOS) publishes tide tables and selected subordinate or 
+     foreign stations are already on the disk and are listed in the file 
+     STALIST.T&C. This list is displayed when the program is run. 
+   
+     Data files can be created with menu option H using either harmonic 
+     constants or differences between the tides at a reference station and 
+     at a subordinate station as given in Table 2 of the National Ocean 
+     Service tide and tidal current tables. 
+     
+     Harmonic constant data for tides and currents for many other U.S. 
+     stations are available. I will send the data for a few stations listed 
+     in the U.S. tide or current tables for the east or west coasts to any 
+     registered user who requests them. (Specify the latitude and longitude 
+     to the nearest minute as well as the name of the location. Data for 
+     the closest station will be provided.) TIDES.DOC gives instructions 
+     for making data files using this data. The data can also be provided 
+     on a customized disk. 
+
+     Data for Canadian ports and limited data for other foreign ports is 
+     also available and will also be provided on request to registered 
+     users. Again specify the latitude and longitude of the station as well 
+     as its name. Foreign data is of varying age, completeness and 
+     accuracy.
+   
+     Please let me know if you have any problems, comments or suggestions. 
+
+     
+
+     Ed Wallner 
+     

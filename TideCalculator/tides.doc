@@ -1,0 +1,443 @@
+       
+                               TIDES.DOC
+
+           DOCUMENTATION FOR TIDES - VERSION 3.03 - 1994 JUN 25 
+
+                           Edward P. Wallner
+                          32 Barney Hill Road
+                         Wayland, MA 01778-3602
+                            (508)-358-7938
+                         epwallnr@world.std.com
+   
+           (Note: Recent changes and additions are underlined)
+   
+     This is a program for predicting the height of the tide or the 
+     strength of the tidal current at various stations. It runs on IBM 
+     compatible machines under MS-DOS or IBM-DOS. The method and format 
+     followed in the predictions are generally those used by the National 
+     Ocean Service (NOS) in the standard tide and current tables. 
+   
+     This program may be freely copied and used for non-commercial 
+     purposes. Feel free to try the program and pass it on without 
+     alteration and without charge. If you use the program a $15 
+     registration fee must be paid. 
+     
+     The author assumes no responsiblity for any errors in the program or 
+     the predictions. 
+   
+     Detailed predictions are made for high and low water (or maximum ebb 
+     and flood) at reference stations for which the tidal constants have 
+     been derived from observations made over a long period of time. The 
+     constants for subordinate stations are found by making corrections to 
+     the constants at the reference stations. The predictions for 
+     subordinate stations are less accurate than for reference stations, 
+     particularly for the lower high and higher low water where tides are 
+     nearly diurnal. Current floods/ebbs at subordinate stations may also 
+     be less accurate. For stations where the current is rotary the current 
+     along the principal axis is predicted. The times and speeds of flood 
+     and ebb in these cases are approximate. 
+
+     The TIDES program predicts the height of the tide or strength of the 
+     current at any time. The values at reference stations are of the same 
+     order of accuracy at any time as for the high/low or flood/ebb values. 
+     The predictions for subordinate stations may be less accurate at 
+     intermediate times, the more so the larger the differences from the 
+     reference station 
+                  
+     PROGRAM OPERATION 
+
+     Just enter TIDES and follow the prompts. When a date is to be input a 
+     default date is displayed. It may be modified using the numerical keys
+     and Home, End, left and right arrows and backspace. In general 
+     entering "Q" or "Esc" will stop any operation and return you to the 
+     menu. 
+
+     A station filename may be entered on the command line after the 
+     "TIDES" command. Any filename can include a valid PATH prefix. 
+
+     Initially the start date is today and the end date is a week from 
+     today. To run the next week's tides for the default station just enter 
+     "A". 
+   
+     If the start date is earlier than 1582/10/15 the Julian calendar is 
+     assumed, otherwise the Gregorian calendar is assumed. 
+   
+     The main menu gives options for:
+     A - Computing and printing highs and lows
+     B - Computing and printing hourly heights
+     C - Plotting heights at a given interval (the default of 0.5 hours 
+         generally works well)
+     D - Computing the height at specified dates and times or intervals
+     E, F & G - Changing the time interval, station, and default station
+     H - Creating additional data files
+     I - Changing from standard to daylight time or vice-versa 
+         (In the U.S. Daylight Saving Time extends from 2 a.m. on the first 
+          Sunday in April to 2 a.m. on the last Sunday in October)
+     J - Changing from metric to English units or vice-versa
+     K - For redirecting the printed output to a file or another printer
+         (The output will be an ASCII file which can be edited using any text 
+          editor) 
+     L & M - Printing the astronomical and constituent factors used in the 
+         predictions (used mainly for verifying the program)
+     N - Shell to DOS without exiting TIDES
+     O - Finding the extreme high, low and range in the time interval
+     Q - Quitting TIDES
+                                                             
+     The equivalent quantities are computed for tidal currents. 
+          
+     When the "CHANGE STATION" or "CHANGE DEFAULT STATION" option is 
+     executed a list of stations for which tidal constants have already 
+     been stored in the TIDES format is shown, including the file names 
+     under which they are kept. This is generally a selected set of 
+     stations for a specific area.
+
+     When the desired station is on the screen press S to stop paging. You 
+     will then be prompted to enter the station file name which is shown in 
+     parentheses after the station coordinates. 
+                                                                            
+     The list can be edited using EDLIN or any other text editing program. 
+     For example undesired stations can be eliminated and other station 
+     titles moved to the desired line. 
+   
+     The station names and locations stored in file STALIST.T&C are 
+     displayed by the program as a reminder, but the name of any file of 
+     data in the TIDES format can be used whether it is on the screen or 
+     in the STALIST.T&C list or not. PATH prefixes can be used in the 
+     filename. New stations for which no data file exists can be created 
+     using menu option H. 
+      
+     CREATING ADDITIONAL DATA FILES 
+   
+     Option H is used to generate data files for the TIDES program both for 
+     stations for which harmonic constants are available and for 
+     subordinate stations, for which only differences from a reference 
+     station are available. 
+   
+     First a title and file name for the station are entered. The prompt 
+     for the title has places for the latitude and longitude of the station 
+     which are optional inputs for better identification and do not affect 
+     the computation. For stations for which harmonic constants are 
+     available you are then prompted to enter the type of station (tide, 
+     current, or hydraulic current) and the amplitude and epoch of each of 
+     37 tidal constituents. The constants are entered in sequence from the 
+     NOS form 444 of "Standard Harmonic Constants for Prediction", columns 
+     B (?.??xH) and D (k'). If there is no data in column  B, use column H 
+     (Amplitude). If the amplitude of a constituent is zero entering "0" or 
+     just a carriage return will enter 0 for both the amplitude and epoch. 
+     The modified epoch D (k') should be entered as a number from 0 to 360; 
+     ignore any minus sign in column D. 
+
+     Several minor constituents can optionally be inferred from the major 
+     constituents if they are not entered directly. This generally gives a 
+     slight improvement in accuracy at the cost of a slight increase in 
+     running time. In places near an amphidromic point, such as New 
+     Zealand, inferred constants are not helpful.
+
+     For subordinate stations the corresponding reference station data must 
+     exist in a data file. The list of stations for which data is already 
+     stored is shown and the file name of the reference station entered. 
+     The time differences between the reference and subordinate stations at 
+     high and low (or maximum flood and ebb) are entered, then the height 
+     differences. In some cases the range of the tide at both stations is 
+     requested, as is the maximum flood and ebb for current stations. This 
+     data can be taken from Table 2 of the NOS tide or current tables. 
+
+     When Option H is run the title of the new station is added to the end 
+     of the STALIST.T&C file. This file must be edited if it is desired to 
+     place the station title in a different line. 
+
+     REQUIREMENTS AND CHARACTERISTICS 
+   
+     TIDES should run on any IBM machine or compatible with 128K of free 
+     memory and the text output should be OK on any printer. The plot of 
+     tide heights on the monitor works on the Color Graphics Adapter (CGA) 
+     board and on the printer uses codes for the EPSON (IBM extended 
+     ASCII.) Special codes to set up NEC pinwriter printers are also 
+     available. TIDES.EXE, the executable version of the prediction 
+     program, runs with or without an 80x87 coprocessor.
+   
+     TIDES computes the highs and lows for Boston for a month in about 1« 
+     minutes on an IBM-XT with an 8087 coprocessor, and in about 38 minutes 
+     without an 8087. (An 8087 coprocessor can be bought for less than $100 
+     and is a good investment if you do much number crunching, such as 
+     tidal predictions.) On a 486DX2-66 a years highs and lows for boston 
+     took 22 seconds.
+
+     Predictions for Boston and New York for 1986 agreed with the standard 
+     tables to the minute and tenth of a foot for most cases with some 
+     times off by 2 or 3 minutes and an occasional difference of .1 or .2  
+     foot. Currents in Cape Cod Canal were generally within 0.1 knot. (If 
+     the tide level remains nearly constant for an extended period the 
+     predicted time of high or low can vary considerably but the height 
+     will still be accurate.) 
+   
+     Predictions should be accurate for any era within a few centuries of 
+     the present unless the physical conditions at the station change. 
+  
+     The source program TIDES.BAS is written in QuickBASIC. The source 
+     code is available to registered users on request. 
+   
+     DATA SOURCES 
+
+     A partial list of places for which I currently have harmonic constants 
+     is given at the end of this document. 
+      
+     The harmonic constants for various North American reference stations 
+     are published by: 
+        National Oceanographic and Atmospheric Administration
+        National Ocean Service N/OMA132
+        Rockville, Maryland 20852 
+   
+     I have a complete set of this data for all U.S. reference stations 
+     including Alaska, about 76 other U.S. stations and many stations in 
+     British Columbia (see BCLIST.TXT for a list of the latter.) I will 
+     send a copy of a limited number of station constants and subordinate 
+     station corrections to registered users who let me know the area of 
+     interest. The stations for which constants are available are listed 
+     below. 
+   
+     Differences for tides and currents for subordinate U.S. locations are 
+     given in the annual tables published by the National Ocean Service. In 
+     1989 the datum to which height of tide is referred was changed from 
+     mean low water to mean lower low water for all U.S. stations. Though 
+     the difference is generally only a couple of tenths of a foot or less, 
+     data should be taken from 1989 or later tables. The constants 
+     themselves do not change appreciably over many years so any later 
+     table can be used. 
+     
+     The International Hydrographic Organization maintains a data bank of 
+     tidal constants for  4208 stations worldwide. If you wish constants 
+     for foreign locations send me the latitudes and longitudes (to the 
+     nearest minute) and I will eventually send the constants for the 
+     closest station in the IHO data set if available. (The IHO data uses 
+     the symbols H for amplitude and G for phase in place of k'.) 
+   
+     The tide tables published by the British Admiralty give data for use 
+     in their Simplified Harmonic Method of Tidal Prediction. This data is 
+     given for about 4400 tide and 148 current stations world-wide. A PC 
+     program implementing this method is also distributed. Harmonic 
+     constants are given for M2, S2, K1 and O1 as well as data from which 
+     M4, M6, S4, S6, MS4, MSf, Sa and SSa can be computed. Predictions of 
+     about the same accuracy can be made with TIDES if inferred constants 
+     are included in the data file. 
+   
+     The French "Table des mare‚s des grands ports du monde" gives Z0, 
+     Sa, Q1, O1, K1, N2, M2, S2, MN4, M4 and MS4 for 901 ports world-wide. 
+     This data is from IHO sources and may not be up-to-date.
+                                                      
+     TIDAL THEORY
+     
+     The theory used in the TIDES program is given in: 
+
+        Manual of Harmonic Analysis and Prediction of Tides
+        Paul Schureman
+        Coast and Geodetic Survey Special Publication No.98
+        U.S. Gov't. Printing Office, Washington D.C. 1941
+   
+     This book has been reprinted recently and is available from NOS for 
+     $3.50 postpaid. I have a few copies and can send one for my cost of 
+     $3.50 + postage for 1« pounds ($1.48 in the U.S.)
+
+     A supplement to this document, "Computer Applications to Tides in the 
+     National Ocean Survey" is also available from NOS at no cost. 
+   
+     MISCELLANEOUS 
+                                                                         
+     The present version of the program does not give predictions of slack 
+     water at current stations and for rotary currents the north and east 
+     components of velocity must be predicted separately at hourly 
+     intervals and combined vectorially by the user. If there is a demand 
+     for these features I may get around to adding them sometime. 
+ 
+     Starting in the 1989 tables the datum was changed to mean lower low 
+     water for all U. S. ports, which meant a change of a few tenths of a 
+     foot in Z0 (item 1, line 2 of -.TID data files) for ports on the 
+     Atlantic coast. The new values (or close approximations) have been 
+     used in the data on this disk. 
+   
+     If you have any suggestions, comments or problems please let me know. 
+   
+
+     HARMONIC CONSTANTS ARE AVAILABLE FOR THE STATIONS LISTED BELOW 
+      ------------- and many other stations ----------------------
+
+   
+     REFERENCE STATIONS COVERED BY NATIONAL OCEAN SURVEY 
+
+     TIDES - EAST COAST
+                                         
+     Albany, New York                     Punta Palmas, Venezuela
+     Amuay, Venezuela                     Philadelphia, Pennsylvania
+     Baltimore, Maryland                  Portland, Maine
+     Boston, Massachusetts                Reedy Point, Delaware
+     Breakwater Harbor, Delaware          St. Marks River Entrance, Florida
+   
+     Bridgeport, Connecticut              St. Petersburg, Florida
+     Caleta Percy, Magellan Strait, Chile***
+     Charleston, South Carolina           Sandy Hook, New Jersey
+     Cristobal, Panama                    San Juan, Puerto Rico
+     Eastport, Maine                      Savannah, Georgia
+   
+     Galveston, Texas                     Savannah River Entrance, Georgia
+     Hampton Roads, Virginia              Suriname Rivier, Surinam 
+     Isla Zapara, Venezuela               Tampico Harbor, Mexico 
+     Key West, Florida                    Washington, D.C.
+     Mayport, Florida                     Willets Point, New York
+   
+     Maimi Harbor Entrance, Florida       Wilmington, North Carolina
+     Mobile, Alabama
+     New London, Connecticut
+     Newport, Rhode Island
+     New York, New York
+   
+     Pensacola, Florida
+     Punta Gorda, Venezuela
+   
+     TIDAL CURRENTS - EAST COAST
+   
+     Baltimore Harbor Approach, MD        Mobile Bay Entrance, FL
+     Boston Harbor, MA                    Pollock Rip Channel, MA
+     Cape Cod Canal, MA                   Portsmouth Harbor Entrance, NH
+     Charleston Harbor, SC                St. Johns River Entrance, FL
+     Chesapeake & Delaware Canal          Savannah River Entrance, GA
+     Chesapeake Bay Entrance              Tampa Bay Entrance, FL
+     Delaware Bay Entrance                The Narrows, New York Harbor, NY
+     Galveston Bay Entrance, TX           The Race, Long Island Sound
+     Hell Gate, East River, NY            Throgs Neck, Long Island Sound
+     Key West, FL                         Vieques Passage, Puerto Rico
+     Miami Harbor Entrance, FL
+
+     TIDES - WEST COAST
+   
+     Aberdeen, Washington                 Matarani, Peru    
+     Anchorage, Alaska ***                
+     Astoria, Oregon                      
+     Balboa, Panama                       Nikishka, Alaska
+     Buenaventura, Columbia               Nushagak Bay, Alaska
+     Callao, Peru                         Port Townsend, Washington
+     Cordova, Alaska                      
+     Dutch Harbor, Alaska                 Puntarenas, Costa Rica    
+     Guayaquil, Ecuador                   St. Michael, Alaska 
+     Guyamas, Mexico                      Salina Cruz, Mexico    
+     Honolulu, Hawaii                     San Diego, California
+     Humboldt Bay, California             San Francisco, California
+     Juneau, Alaska                       Seattle, Washington
+     Ketchikan, Alaska                    Seldovia, Alaska
+     Kodiak, Alaska                       Sitka, Alaska
+     Kwajelein Atoll, Marshall Is.        Sweeper Cove, Alaska
+     La Union, El Salvador                
+     Los Angeles, California              Talara, Peru 
+     Massacre Bay, Alaska                 Valdez, Alaska
+
+     TIDAL CURRENTS - PACIFIC COAST
+   
+     Admiralty Inlet, WA                  Rosario Strait, WA
+     Akutan Pass, Aleutian Islands        San Diego Bay Entrance, CA
+     Ch'ang Chiang Entrance, China        San Francisco Bay Entrance, CA
+     Deception Pass, WA                   San Juan Channel (S. Entrance), WA
+     Grays Harbor Entrance, WA            Sergius Narrows, AK
+   
+     Huang P'u Chiang, China              Strait of Juan de Fuca Entrance
+     Isanotski Strait, AK                 The Narrows, Puget Sound, WA
+     Kvichak Bay, AK                      Unimak Pass, Aleutian Islands
+     North Inian Pass, AK                 Wrangell Narrows, AK
+   
+     *** Complete prediction requires more than 37 constituents.
+ 
+     
+     OTHER TIDE STATIONS 
+   
+     Alameda, CA                          Apalachicola, FL
+     Apia, Samoa Islands
+     Aquia Creek, Potomac River, VA       Aransas Channel, TX
+     Arthur Harbor, Palmer Station, Antarctica
+     Atlantic City (Steel Pier), NJ       Avon, NC
+   
+     Bar Harbor, ME                       Bayou Rigaud (Grand Isle), LA
+     Bayshore, L.I., NY                   Bay St. Louis, MS
+     Bears Bluff, N. Edisto R., SC        Block Island (Old Harbor), RI
+     Boca Congrejos, Isla Verde, PR       Buzzards Bay Entr, Cape Cod Canal, MA
+     Burntcoat Head, Nova Scotia          Canton Island, Phoenix Is., S. Pac.  
+   
+     Cape Cod Canal, E. Entrance, MA      Cape Hatteras (Fishing Pier), NC     
+     Cape May (ferry terminal), NJ        Cape Steenboom, New Guinea
+     Carlos Point, Estero Bay, FL         Charleston, OR
+     Chesapeake Beach, MD                 Coconut Point, FL
+     Colonial Beach, VA                   Constantine Harbor, AK
+   
+     Crescent City, CA                    Daytona Beach, Fl
+     Daytona Beach Shores (Sunglow Pier), FL
+     Elkhorn Slough, CA                   Esbjerg, Denmark
+     Friday Harbor, San Juan Island, WA
+     Galveston, Pleasure Pier, TX         Garibaldi, OR
+     Guam (Apra Harbor), Marianas         Hirtshals, Denmark
+     Indian River Inlet, DE               
+   
+     Lewisetta, Potomac River, VA         Turkey Point, FL                     
+     La Jolla, CA                         Eureka, CA                           
+     Point of Pines, SC                   Port San Luis, CA.
+     Neah Bay, WA                         Cross Island, AK
+     Nantucket, MA                        Malakal Harbor, Palau Is. Caroline Is. 
+   
+     Matanzas Pass, Estero Island, FL     McMurdo Sound, Antarctica            
+     Mokuoloe Island, HI                  Montauk, Long Island, NY             
+     Monterey Harbor, CA                  Morehead City, NC                    
+     Moss Landing, CA                     Myrtle Beach (Springmaid Pier), SC
+     Naples, FL                           New Bedford, MA
+   
+     Newport Bay, CA                      Nikiska, Cook Inlet, AK              
+     Old Saybrook Point, CT               Padre Island (South End), TX         
+     Ponape Harbor, Caroline Islands      Port Aransas, TX                     
+     President Channel, Orcas Is., WA     Providence, RI                       
+     Puerto Soberania, Palmer Peninsula   
+   
+     Punta Tunas, PR                      Reykjavik, Iceland
+     Rincon Island, CA                    Rockland, ME
+     Sabine Pass, TX                      Saint John, New Brunswick
+     Seavey Island, ME                    Shell Point, FL                      
+     Southbeach, OR                       Stamford, CT                         
+   
+     Tarawa, Gilbert Islands              Toke Point, WA
+     Virginia Beach, VA                   Wachapreague, VA
+     Wallops Island, VA                   Yakutat, AK
+
+     INTERNATIONAL HYDROGRAPHIC ORGANISATION DATA
+
+     Banyuls, France                      Socoa, France
+     Toulon, France                       Marseille, France
+     Saint Servan, France                 Cherbourg, France
+     Nice, France                         Venezia, Italy
+     Grado, Italy                         Esbjerg, Denmark
+     Aarhus, Denmark                      Hirtshals, Denmark
+   
+     Saint John, New Brunswick, Canada    Burntcoat Head, Canada
+     Grand Turk, UK                       
+
+     Cabo San Lucas, B.C.S., Mexico       La Paz, B.C.S., Mexico
+     Magdalena Bay, Mexico                San Carlos, B.C.S., Mexico
+     Topolobampo, Sin., Mexico            San Juanico Bay, Mexico
+     Yavaros, Son., Mexico                Ballenas Bay, Mexico
+     Guaymas, Som., Mexico                Isla Guadalupe, B.C., Mexico
+     Bahia de los Angeles, B.C., Mexico   Puerto Penasco, Son., Mexico
+     Ensenada, B.C., Mexico               Salina Cruz, Oax., Mexico            
+   
+     Matavia, Tahiti, France              Motuoini, Tahiti, France
+     Nuku'alofa, Tonga                    Urangan Jetty, Australia
+     Brisbane Bar, Australia              Caloundra Heads, Australia
+     Brisbane (W. Inner Bar), Australia   Snapper Rocks(Danger Point), Australia
+     Ballina, Australia                   Iluka, Australia
+     Victoria Dock, Singapore             Horsburgh Lighthouse, Singapore
+     Tg. Segenting, Malaysia              Colombo, Sri Lanka
+     Hong Kong, UK                        Kao-Hsiung, China
+     Fujairah, Oman (U.A.E.)              Naha Ko, Japan
+     Kobe, Japan                          Nagoya, Japan
+     Sinko, Yokohama, Japan               
+
+     CANADIAN DATA
+
+     Constants for all reference tide stations in the NOS tables for the 
+     East and West coasts are available as well as most stations in British 
+     Columbia. Tidal current constants for Grand Manan Channel (Bay of 
+     Fundy Entrance) are also on hand. 
+       
+
