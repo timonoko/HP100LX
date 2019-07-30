@@ -1,0 +1,1 @@
+echo hui > c:\snipper

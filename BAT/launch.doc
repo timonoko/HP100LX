@@ -1,0 +1,72 @@
+Subject: Full Dos Launcher and Menu-switcher for HP*LX
+
+
+LAUNCH.COM is an utility which allows you to launch 640k
+dos-applications from HP100LX's application manager. This
+is accomplished by completely terminating the application manager and
+feeding approriate command line to the underlying dos-system.
+This dos-application should be primarily a BAT-file, which when
+terminated with 100-command will automatically restart the
+application manager.
+
+For example assuming that we have a c:\BAT\TEST.BAT-file containing
+these 2 lines:
+	CHKDSK
+	100
+
+and adding new icon: 
+	Name: CHKDSK
+	Path: C:\BAT\LAUNCH.COM TEST
+	Comment: <Nothing here - especially not the reversed ?>
+
+and now we can launch CHKDSK in 640k dos-space from the application
+manager like any other smaller Dos-application previously.
+
+** Note that LAUNCH can transport only 8 characters + <enter>
+to the dos-system. LAUNCH.COM and those BAT-files that are
+to be launched should be in the same directory. 
+
+LAUNCH.COM is exellent for those huge two-way interactive language
+translators (by ENTENTE) - just add "100" to the end of the BAT-files.
+
+
+2. Menu-switcher
+----------------
+
+The enclosed MENU.BAT is launched with LAUNCH.COM.
+MENU.BAT replaces C:\_DAT\APPMGR.DAT and some associated
+files and thus accomplishes way to extend application manager's
+icon capacity. I suggest that you study the MENU.BAT yourself to
+understand its working. The basic usage of menu-swichers
+would be like
+
+Name: NEXT MENU
+Path: C:\BAT\LAUNCH.COM MENU <this-menu-nmbr) <next-menu-nmbr>
+
+For example MENU 0 2 would rename APPMGR.DAT into APPMGR.MN0
+and then rename APPMGR.MN2 into APPMGR.DAT and thus when the
+application manager is restarted, menu-0 is replaced with menu-2.
+
+To create new menu (eg 7) inside some other menu (eg 3) you simply
+write LAUNCH.COM MENU 3 7 -icon and activate that icon. If you
+copy some other APPMGR-file into APPMGR.MN7 and use that to build new
+menu, you must remember to change all menu-switching commands so that
+they actually jump out from that particular menu-7, otherwise your
+fancy multi-menu system will be hopelessly messed up!
+I suggest reserving number-keys as short-cut-keys when selecting
+corresponding menues. 
+
+I assume that this stuff is not particularly HP100LX-dependant
+and the above-mentioned and SWAP.BAT can be upgraded
+simply by replacing the 100-commands with 200-commands.
+
+LAUNCH.COM and SWAP.BAT and LAUNCH.DOC are available from
+
+http://www.clinet.fi/~noko/launch.zip
+
+Small donations in bills of your local currency in air-mail
+envelopes are always welcomed and used 100% to support
+Cigar&Rum-industry in Cuba and other countries.
+
+
+
