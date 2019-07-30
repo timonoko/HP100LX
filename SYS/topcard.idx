@@ -1,0 +1,57 @@
+;This index file may not exceed 15 KB!
+;All entries have to start at the beginning of a line.
+;Comment lines must start with ';'.
+;No blancs are allowed in expressions like 'parameter=value'.
+;All entries are not case sensitive. 
+
+[LxPic]
+
+;Enter the path and filename of LXPIC (version 4.2 or higher)
+viewer=lxpic.com
+
+;Enter the path and filename of the map, you want to use
+map=d:\_sys\topcard.pcx
+
+;Enter the width of the map in pixel
+width=640
+
+;Enter the height of the map in pixel
+height=200
+
+;Select overview 'zoom out' factor from 1:1,1:2,1:4,1:8,1:16,1:32
+;'T' enables the LxPic 'Text zoom' feature. Omit it, if your
+;map includes no text.
+overview=1:4T
+
+;Enter the map window title. Blancs are allowed in title.
+title= topcard 
+
+;Enter the grid width in pixel (range: 8-420).
+;Use multiples of 8 for exact overlapping grids.
+;If you omit grid-w, 100 is assumed.
+grid-w=40
+
+;Enter the grid height in pixel (range: 8-184).
+;If you omit grid-h, 100 is assumed
+grid-h=40
+
+
+
+[Index]
+
+;Use the Edit function of LxMap to enter and link the items.
+;Each item is separated with '$' from the grid, where the
+;item is located on the map. No blancs are allowed after '$'.
+;The grid is a letter/number combination representing the
+;horizontal/vertical coordinates. The maximal grid is Z99.
+;Only the first 23 characters of the streetname are displayed.
+
+;........10........20.  position of last displayed character.
+2$F5 
+HEWLETT$I1 
+HP$G1 
+L$I5 
+TWO$F5 
+YOUR NAME$H3 
+ZERO$G5 
+
