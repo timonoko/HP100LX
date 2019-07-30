@@ -1,0 +1,11 @@
+LxPic is a 20 KB viewer for JPG, GIF, PCX
+and BMP running in 64 KB memory under DOS
+and WinXX. Written in 8086 ASM, supporting
+all screen modes from CGA up to 2048x1536
+True Color VESA. Shows all pictures on all
+your drives with one keystroke only (F5).
+No installation. Just one single COM file.
+Thumbnails, (auto)zoom, slideshow, video,
+dither, b&w, gray, color manipulation etc.
+--- Interface for use as a subroutine ---
+Copyright (c)2002 Stefan Peichl, Freeware
